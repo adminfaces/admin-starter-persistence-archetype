@@ -1,14 +1,14 @@
-= AdminFaces Starter Archetype
+= AdminFaces Starter Persistence Archetype
 :tip-caption: :bulb:
 :note-caption: :information_source:
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
 
-Maven archetype for https://github.com/adminfaces/admin-starter[AdminStarter^] application.
+Maven archetype for https://github.com/adminfaces/admin-starter-persistence[Admin Starter Persistence^] application.
 
 == Running 
 
 ----
- mvn archetype:generate -Dfilter=com.github.adminfaces:admin-starter-archetype
+ mvn archetype:generate -Dfilter=com.github.adminfaces:admin-starter-persistence-archetype
 ----
