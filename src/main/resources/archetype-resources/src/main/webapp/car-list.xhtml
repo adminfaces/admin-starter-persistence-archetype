@@ -215,7 +215,8 @@
             </h:form>
         </p:dialog>
 
-        <p:outputPanel autoUpdate="true">
+        <p:outputPanel>
+			<p:autoUpdate/>
             <p:tooltip for="@(div[id${symbol_dollar}=footer])" escape="false" position="top"
                        showEvent="mouseover" hideEvent="mouseleave"
                        value="${symbol_pound}{carListMB.searchCriteria}"/>
