@@ -9,7 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <adminfaces.version>1.0.0-RC21</adminfaces.version>
+        <adminfaces.version>1.0.0</adminfaces.version>
         <version.hibernate>5.1.8.Final</version.hibernate>
         <version.deltaspike>1.8.0</version.deltaspike>
     </properties>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
-            <version>7.0.RC2</version>
+            <version>7.0</version>
         </dependency>
         <dependency>
             <groupId>org.primefaces.extensions</groupId>
@@ -47,7 +47,7 @@
         <dependency>
             <groupId>com.github.adminfaces</groupId>
             <artifactId>admin-persistence</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.5</version>
         </dependency>
 
         <!-- persistence -->
@@ -228,7 +228,6 @@
 
         <profile>
             <id>docker</id>
-
             <build>
                 <plugins>
                     <plugin>

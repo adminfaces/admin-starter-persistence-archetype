@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t rmpestano/admin-starter-persistence ../
+docker build -t ${artifactId}/${artifactId} ../

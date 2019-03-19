@@ -21,7 +21,6 @@
         <adm:breadcrumb title="${symbol_pound}{empty carFormMB.id ? 'New Car' : 'Car '.concat(carFormMB.id)}" link="car-form.xhtml?id=${symbol_pound}{carFormMB.id}"/>
         <h:form id="form" prependId="false">
             <p:focus context="@form"/>
-
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <div id="main-buttons" class="hidden-sm hidden-xs">
@@ -67,30 +66,48 @@
                     <p:separator/>
 
                     <div class="ui-g ui-fluid">
-                        <div class="ui-sm-12 ui-md-2 ui-lg-1">
+                        <div class="ui-sm-12 ui-g-6 ui-g-nopad"> 
+                            <div class="ui-sm-12 ui-g-11">
                             <p:outputLabel for="id" value="ID"/>
                         </div>
-                        <div class="ui-sm-12 ui-md-4 ui-lg-5" >
-                            <p:inputText id="id" value="${symbol_pound}{carFormMB.entity.id}" size="4"
-                                         readonly="true" styleClass="form-control" style="width: 100%"/>
+                            <div class="ui-sm-12 ui-g-11" >
+                                <p:inputText id="id" value="${symbol_pound}{carFormMB.entity.id}" readonly="true" styleClass="form-control ui-state-disabled" style="width: 100%"/>
+                                <span class="help-block"> 
+                                    <p:message for="id" /> 
+                                </span> 
                         </div>
-                        <div class="ui-sm-12 ui-md-2 ui-lg-1">
+                        </div> 
+                        <div class="ui-sm-12 ui-g-6 ui-g-nopad"> 
+                            <div class="ui-sm-12 ui-g-11">
                             <p:outputLabel value="Model" for="inptModel"/>
                         </div>
-                        <div class="ui-sm-12 ui-md-4 ui-lg-5" >
-                            <p:inputText id="inptModel" value="${symbol_pound}{carFormMB.entity.model}"/>
+                            <div class="ui-sm-12 ui-g-11" >
+                                <p:inputText id="inptModel" value="${symbol_pound}{carFormMB.entity.model}" required="true"/>
+                                <span class="help-block"> 
+                                    <p:message for="inptModel" /> 
+                                </span> 
                         </div>
-                        <div class="ui-sm-12 ui-md-2 ui-lg-1">
+                        </div>     
+                        <div class="ui-sm-12 ui-g-6 ui-g-nopad">     
+                            <div class="ui-sm-12 ui-g-11">
                             <p:outputLabel value="Name" for="inptName"/>
                         </div>
-                        <div class="ui-sm-12 ui-md-4 ui-lg-5" >
-                            <p:inputText id="inptName" value="${symbol_pound}{carFormMB.entity.name}"/>
+                            <div class="ui-sm-12 ui-g-11" >
+                                <p:inputText id="inptName" value="${symbol_pound}{carFormMB.entity.name}" required="true"/>
+                                <span class="help-block"> 
+                                    <p:message for="inptName" /> 
+                                </span>
                         </div>
-                        <div class="ui-sm-12 ui-md-2 ui-lg-1">
+                        </div>     
+                        <div class="ui-sm-12 ui-g-6 ui-g-nopad">     
+                            <div class="ui-sm-12 ui-g-11">
                             <p:outputLabel value="Price" for="inptPrice"/>
                         </div>
-                        <div class="ui-sm-12 ui-md-4 ui-lg-5" >
-                            <p:inputNumber id="inptPrice" value="${symbol_pound}{carFormMB.entity.price}"/>
+                            <div class="ui-sm-12 ui-g-11" >
+                                <p:inputNumber id="inptPrice" value="${symbol_pound}{carFormMB.entity.price}" required="true"/>
+                                <span class="help-block"> 
+                                    <p:message for="inptPrice" /> 
+                                </span>
                         </div>
                     </div>
                 </div>
