@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <adminfaces.version>1.0.0</adminfaces.version>
         <version.hibernate>5.1.8.Final</version.hibernate>
-        <version.deltaspike>1.8.0</version.deltaspike>
+        <version.deltaspike>1.8.2</version.deltaspike>
     </properties>
 
     <dependencies>
@@ -43,7 +43,11 @@
             <version>${adminfaces.version}</version>
             <!--<classifier>dev</classifier> uncompressed theme.css (note that you need to exclude admin-theme brought by admin-template dependency)-->
         </dependency>
-
+        <dependency>
+            <groupId>org.omnifaces</groupId>
+            <artifactId>omnifaces</artifactId>
+            <version>3.2</version>
+        </dependency>
         <dependency>
             <groupId>com.github.adminfaces</groupId>
             <artifactId>admin-persistence</artifactId>

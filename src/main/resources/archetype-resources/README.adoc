@@ -33,8 +33,11 @@ You can also run via http://wildfly-swarm.io/[wildfly-swarm^] with command `mvn 
 Or using docker:
 
 ----
-docker run -it -p 8080:8080 rmpestano/admin-starter-persistence
+docker run -it -p 8080:8080 ${artifactId}/${artifactId}
 ----
+
+TIP: Use the `build-and-run.sh` to easily start the application on a docker container.
+
 
 The application is available at http://localhost:8080/admin-starter
 
