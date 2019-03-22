@@ -39,8 +39,8 @@ docker run -it -p 8080:8080 ${artifactId}/${artifactId}
 TIP: Use the `build-and-run.sh` to easily start the application on a docker container.
 
 
-The application is available at http://localhost:8080/admin-starter
+The application is available at http://localhost:8080/${artifactId}
 
 == Demo
 
-A live demo is available on http://admin-starter-admin.1d35.starter-us-east-1.openshiftapps.com/admin-starter/[Openshift here^]
+A live demo is available on http://adminfaces.github.io/admin-starter/[Openshift here^]
