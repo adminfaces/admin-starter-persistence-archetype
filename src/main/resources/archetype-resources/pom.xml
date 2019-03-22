@@ -48,13 +48,12 @@
             <artifactId>omnifaces</artifactId>
             <version>3.2</version>
         </dependency>
+        <!-- persistence -->
         <dependency>
             <groupId>com.github.adminfaces</groupId>
             <artifactId>admin-persistence</artifactId>
             <version>1.0.5</version>
         </dependency>
-
-        <!-- persistence -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
