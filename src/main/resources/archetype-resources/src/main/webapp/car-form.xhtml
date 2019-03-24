@@ -12,7 +12,7 @@
     </ui:define>
     <ui:define name="metadata">
         <f:metadata>
-            <f:viewParam name="id" value="${symbol_pound}{carFormMB.id}" converter="javax.faces.Long"/>
+            <f:viewParam name="id" value="${symbol_pound}{carFormMB.id}" converter="javax.faces.Integer"/>
             <!-- use view action if you are in a Java EE 7 server: <f:viewAction action="${symbol_pound}{carFormMB.init()}"/>-->
             <f:event type="preRenderView" listener="${symbol_pound}{carFormMB.init}"/>
         </f:metadata>
