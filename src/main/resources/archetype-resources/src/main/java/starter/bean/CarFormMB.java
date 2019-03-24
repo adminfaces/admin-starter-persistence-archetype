@@ -15,8 +15,8 @@ import org.omnifaces.cdi.ViewScoped;
 import org.omnifaces.util.Faces;
 
 import javax.inject.Named;
-import java.io.IOException;
 import java.io.Serializable;
+import java.util.logging.Level;
 
 /**
  * @author rmpestano
@@ -34,9 +34,8 @@ public class CarFormMB extends CrudMB<Car> implements Serializable {
             Faces.redirect("car-list.xhtml");
             clear(); 
             sessionFilter.clear(CarListMB.class.getName());//removes filter saved in session for CarListMB.
-            
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            log.log(Level.WARNING, "", e);
         }
     }
 
