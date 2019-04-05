@@ -38,8 +38,12 @@ Or using docker:
 docker run -it -p 8080:8080 ${artifactId}/${artifactId}
 ----
 
-TIP: Use the `build-and-run.sh` to easily start the application on a docker container.
+[TIP]
+====
+Use `bash build-and-run.sh` to easily start the application on a docker container.
 
+TIP: To run on `Payara` or `Tomee` just replace Dockerfile content with `Dockerfile-payara` or `Dockerfile-tomee` and run the build-and-run script.
+====
 
 The application is available at http://localhost:8080/${artifactId}
 
