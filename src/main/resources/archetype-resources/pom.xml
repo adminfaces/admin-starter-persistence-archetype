@@ -46,7 +46,7 @@
         <dependency>
             <groupId>org.omnifaces</groupId>
             <artifactId>omnifaces</artifactId>
-            <version>3.2</version> <!-- use verion 2.1 for JavaEE 6 application servers -->
+            <version>2.6.1</version> <!-- use verion 2.1 for JavaEE 6 application servers -->
         </dependency>
         <!-- persistence -->
         <dependency>
