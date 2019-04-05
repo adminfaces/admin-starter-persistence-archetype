@@ -54,8 +54,7 @@
     <fileSet filtered="true" encoding="UTF-8">
       <directory>docker</directory>
       <includes>
-        <include>**/*.sh</include>
-        <include>**/*.conf</include>
+        <include>**/*</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
